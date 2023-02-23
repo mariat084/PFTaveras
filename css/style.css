@@ -9076,7 +9076,7 @@ a:hover {
   flex: 1 1 clamp(300px, 30%, 400px); }
 
 #directo {
-  color: black;
+  color: #1d1d5c;
   text-decoration: none;
   transition: all 0.3s; }
 

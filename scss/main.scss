@@ -1,4 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
 
 img {
     width: 100%;
@@ -45,7 +46,7 @@ a:hover {
 }
 
 #directo {
-    color: black;
+    color: $miblue;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -70,9 +71,12 @@ a:hover {
     gap: 10px;
 }
 
-.lista:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.lista {
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
 }
+
 
 footer {
     height: 100px;
@@ -81,15 +85,15 @@ footer {
 #carouselExample {
     height: 450px;
     max-width: 900px;
- 
+
     overflow: hidden;
 
 }
 
 #carouselExample img {
     height: 450px;
-  
-    
+
+
 
 }
 
