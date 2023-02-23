@@ -9047,21 +9047,20 @@ img {
 
 #header {
   height: 130px; }
+  #header h1, #header .h1 {
+    text-align: center; }
 
 .header-logo {
   max-width: 120px; }
 
-#header h1, #header .h1 {
-  text-align: center; }
-
 .navbar a {
-  color: var(--bs-gray-300);
+  color: var(--bs-gray-500);
   text-decoration: none;
   transition: all 0.3s;
   display: inline-block; }
 
 a:hover {
-  background-color: var(--bs-gray-800); }
+  background-color: var(--bs-gray-500); }
 
 .cards {
   display: flex;
@@ -9107,9 +9106,8 @@ footer {
   height: 450px;
   max-width: 900px;
   overflow: hidden; }
-
-#carouselExample img {
-  height: 450px; }
+  #carouselExample img {
+    height: 450px; }
 
 @media (max-width: 768px) {
   #menu {

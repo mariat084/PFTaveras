@@ -1,5 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variables";
+@import "operaciones";
 
 img {
     width: 100%;
@@ -9,27 +10,30 @@ img {
 #header {
     height: 130px;
 
+    h1 {
+        text-align: center;
+    }
+
 }
 
 .header-logo {
     max-width: 120px;
 }
 
-#header h1 {
-    text-align: center;
+.navbar {
+    a {
+        color: var(--bs-gray-500);
+        text-decoration: none;
+        transition: all 0.3s;
+        display: inline-block;
+    }
 }
 
-.navbar a {
-    color: var(--bs-gray-300);
-    text-decoration: none;
-    transition: all 0.3s;
-    display: inline-block;
+a {
+    &:hover {
+        background-color: var(--bs-gray-500);
+    }
 }
-
-a:hover {
-    background-color: var(--bs-gray-800);
-}
-
 
 .cards {
     display: flex;
@@ -59,7 +63,7 @@ a:hover {
 }
 
 .lista {
-    width: 350px;
+    width: $ancho*3.5;
     background-color: var(--bs-success-bg-subtle);
     text-align: justify;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -67,7 +71,7 @@ a:hover {
 }
 
 #lista-uno {
-    width: 1000px;
+    width: $ancho*10;
     gap: 10px;
 }
 
@@ -85,17 +89,15 @@ footer {
 #carouselExample {
     height: 450px;
     max-width: 900px;
-
     overflow: hidden;
 
-}
-
-#carouselExample img {
-    height: 450px;
-
-
+    img {
+        height: 450px;
+    }
 
 }
+
+
 
 @media (max-width: 768px) {
     #menu {
