@@ -1,0 +1,14 @@
+.navbar {
+    a {
+        color: var(--bs-gray-500);
+        text-decoration: none;
+        transition: all 0.3s;
+        display: inline-block;
+    }
+}
+
+a {
+    &:hover {
+        background-color: var(--bs-gray-500);
+    }
+}

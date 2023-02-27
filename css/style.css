@@ -9045,6 +9045,43 @@ img {
   width: 100%;
   height: auto; }
 
+.cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1 1 clamp(300px, 30%, 400px); }
+
+#directo {
+  color: #09949e;
+  text-decoration: none;
+  transition: all 0.3s; }
+
+.lista {
+  width: 350px;
+  background-color: var(--bs-success-bg-subtle);
+  text-align: justify;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; }
+
+#lista-uno {
+  justify-content: space-around; }
+
+.lista:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+#carouselExample {
+  height: 450px;
+  max-width: 900px;
+  overflow: hidden; }
+  #carouselExample img {
+    height: 450px; }
+
 #header {
   height: 130px; }
   #header h1, #header .h1 {
@@ -9062,22 +9099,8 @@ img {
 a:hover {
   background-color: var(--bs-gray-500); }
 
-.cards {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.box {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  flex: 1 1 clamp(300px, 30%, 400px); }
-
-#directo {
-  color: #507db8;
-  text-decoration: none;
-  transition: all 0.3s; }
+footer {
+  height: 100px; }
 
 #green {
   background-image: url("./img/green.png");
@@ -9085,32 +9108,11 @@ a:hover {
   background-position: center;
   background-size: contain; }
 
-.lista {
-  width: 350px;
-  background-color: var(--bs-success-bg-subtle);
-  text-align: justify;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s; }
-
-#lista-uno {
-  width: 1000px;
-  gap: 10px; }
-
-.lista:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
-
-footer {
-  height: 100px; }
-
-#carouselExample {
-  height: 450px;
-  max-width: 900px;
-  overflow: hidden; }
-  #carouselExample img {
-    height: 450px; }
-
 @media (max-width: 768px) {
   #menu {
-    height: auto; }
-  article #lista-uno {
-    justify-content: center; } }
+    height: auto; } }
+
+@media (max-width: 995px) {
+  #lista-uno {
+    justify-content: center;
+    gap: 16px; } }
