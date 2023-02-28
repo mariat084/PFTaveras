@@ -2,7 +2,9 @@
 @import "./utilities/variables";
 @import "./utilities/operaciones";
 @import "./utilities/mixins";
+@import "./utilities/map-get";
 @import "./base/reset_img";
+@import "./base/_typo.sass";
 @import "./components/cards_y_listas";
 @import "./components/carousel";
 @import "./layout/header";

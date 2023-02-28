@@ -4,3 +4,17 @@
     background-position: center;
     background-size: contain;
 }
+
+.gracias_box {
+    gap: 10px;
+}
+
+.gracias {
+    @include sizes($ancho*3, $ancho/2);
+    @include crear-bordes($verdealto, 3px, $gris-medio);
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    line-height: $ancho/2;
+   
+} 
+

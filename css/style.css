@@ -9042,8 +9042,8 @@ textarea.form-control-lg {
     display: none !important; } }
 
 img {
-  width: 100%;
-  height: auto; }
+  height: auto;
+  width: 100%; }
 
 .cards {
   display: flex;
@@ -9100,13 +9100,27 @@ a:hover {
   background-color: var(--bs-gray-500); }
 
 footer {
-  height: 100px; }
+  height: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 #green {
   background-image: url("./img/green.png");
   background-repeat: repeat;
   background-position: center;
   background-size: contain; }
+
+.gracias_box {
+  gap: 10px; }
+
+.gracias {
+  height: 50px;
+  width: 300px;
+  border: 3px solid #03ff14;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px #858585;
+  background-color: rgba(173, 226, 177, 0.514);
+  text-align: center;
+  line-height: 50px; }
 
 @media (max-width: 768px) {
   #menu {
