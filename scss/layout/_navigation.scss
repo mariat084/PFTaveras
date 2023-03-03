@@ -12,3 +12,9 @@ a {
         background-color: var(--bs-gray-500);
     }
 }
+
+#menu {
+    @media (max-width: 768px) {
+        height: auto;
+    }
+}

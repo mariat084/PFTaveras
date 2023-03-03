@@ -28,8 +28,12 @@
 }
 
 #lista-uno {
-
     justify-content: space-around;
+
+    @media (max-width: 995px) {
+        justify-content: center;
+        gap: $ancho*0.16;
+    }
 }
 
 .lista {
